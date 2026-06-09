@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #6d4aff; /* Zepee brand purple (matches the app) */
+  --accent-soft: #f0ecff;
+
+  --btn-color: #fdfdfd;
+  --btn-bg: var(--accent);
+
+  --primary-text-color: #1d1b1b;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hero headline: tight, modern display treatment (sentence case). */
+.hero-title {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.03;
+}
+
+.accent-text {
+  color: var(--accent);
+}
+
+/* Brand logo mark — purple rounded square with the Zepee video glyph (matches the app). */
+.zp-logo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 9px;
+  background: var(--accent);
+  color: #fff;
+  flex: none;
+}
+
+/* Hero: text + product shot side by side on desktop; stack + center below 1024px. */
+@media (max-width: 1024px) {
+  .hero-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+header {
+  background-color: #fff;
+  color: #000;
+}
+
+.header-links {
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.header-links:hover {
+  color: var(--accent);
+}
+
+.primary-text-color {
+  color: var(--primary-text-color);
+}
+
+.btn {
+  padding: 10px 15px;
+  width: max-content;
+  border-radius: 10px;
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(1.08);
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.input {
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  min-width: 100px;
+  border: 2px solid #818080;
+  transition: border 0.3s;
+}
+
+.input:active,
+.input:focus,
+.input:focus-within {
+  border: 2px solid var(--accent);
+}
+
+.footer-link {
+  color: #0d0d0d;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}

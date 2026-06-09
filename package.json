@@ -1,0 +1,21 @@
+{
+  "name": "zepee.com",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Zepee waitlist landing page",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "tailwindcss": "^4.3.0",
+    "vite": "^6.3.6"
+  },
+  "packageManager": "pnpm@11.5.0",
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

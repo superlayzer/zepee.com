@@ -1,3 +1,4 @@
+import "@fontsource-variable/inter";
 import "./style.css";
 
 // AJAX-submit (rather than a native POST) so we can show an inline thank-you

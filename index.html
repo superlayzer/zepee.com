@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zepee — turn any website into launch videos and screenshots</title>
+    <meta
+      name="description"
+      content="Zepee turns your website into a video and screenshots, automatically — no screen recording or editing. Join the waitlist."
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="Zepee — turn any website into launch videos and screenshots"
+    />
+    <meta
+      property="og:description"
+      content="Zepee turns your website into a video and screenshots, automatically — no screen recording or editing."
+    />
+    <meta property="og:type" content="website" />
+    <!-- TODO: set og:url + og:image once the domain and a preview image exist -->
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="flex min-h-[100vh] flex-col bg-[#ffffff]">
+    <header
+      class="absolute top-0 z-20 flex h-[60px] w-full items-center justify-between bg-white px-[10%] text-black max-lg:px-4"
+    >
+      <a class="flex place-items-center gap-2" href="">
+        <span class="zp-logo-icon">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m22 8-6 4 6 4V8Z" />
+            <rect width="14" height="12" x="2" y="6" rx="2" />
+          </svg>
+        </span>
+        <span class="text-2xl font-semibold">Zepee</span>
+      </a>
+      <nav class="flex items-center gap-5 text-base">
+        <a class="header-links max-sm:hidden" href="#how-it-works">
+          How it works
+        </a>
+        <a
+          href="#waitlist"
+          aria-label="join waitlist"
+          class="rounded-sm border-2 border-[#1c1c1c] p-1 px-2 transition-colors duration-[0.3s] hover:bg-black hover:text-white"
+        >
+          Join waitlist
+        </a>
+      </nav>
+    </header>
+
+    <section
+      class="relative flex min-h-[100vh] w-full max-w-[100vw] flex-col overflow-hidden max-lg:p-4 max-md:mt-[50px]"
+    >
+      <div
+        class="hero-layout flex h-full min-h-[100vh] w-full place-content-center gap-6 p-[5%]"
+      >
+        <div
+          class="flex max-w-[800px] min-w-[450px] flex-col place-content-center max-xl:min-w-[250px]"
+        >
+          <div
+            class="accent-text text-lg font-semibold uppercase"
+            style="margin-bottom: 0.5rem"
+          >
+            For indie founders shipping a launch
+          </div>
+          <div class="hero-title flex flex-wrap text-6xl max-lg:text-4xl">
+            Turn any website
+            <br />
+            into launch videos
+            <br />
+            and screenshots.
+          </div>
+          <div class="reveal mt-10 p-2 max-lg:max-w-full">
+            Tell Zepee what to show. It clicks through your website like a real
+            visitor and turns it into a video and screenshots — no screen
+            recording or editing.
+          </div>
+
+          <h2 class="reveal mt-6 text-lg" id="waitlist">Get early access</h2>
+          <form
+            name="waitlist"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            class="reveal mt-4 flex h-[50px] w-full max-w-[440px] items-center gap-3"
+          >
+            <input type="hidden" name="form-name" value="waitlist" />
+            <p class="hidden">
+              <label>
+                Leave this empty:
+                <input name="bot-field" />
+              </label>
+            </p>
+            <input
+              type="email"
+              name="email"
+              required
+              class="input h-full w-full min-w-0 flex-1 rounded-md border-[2px] border-solid border-[#bfbfbf] bg-transparent p-2 px-3 transition-colors duration-[0.3s] outline-none"
+              placeholder="joe@example.com"
+            />
+            <button
+              type="submit"
+              class="btn h-full shrink-0 whitespace-nowrap transition-colors duration-[0.3s]"
+            >
+              Join the waitlist
+            </button>
+          </form>
+        </div>
+
+        <div class="flex w-full place-content-center items-center">
+          <img
+            src="/assets/images/mockups/hero.png"
+            alt="The Zepee app turning a website into demo videos and screenshots"
+            class="h-auto w-full max-w-[620px] rounded-2xl shadow-xl"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="relative flex w-full max-w-[100vw] flex-col place-content-center place-items-center overflow-hidden p-6"
+    >
+      <div class="flex max-w-[750px] flex-col gap-5 text-center">
+        <h2 class="mt-5 text-4xl font-semibold max-lg:text-3xl">
+          Made for launch day
+        </h2>
+
+        <div class="text-gray-700">
+          Zepee is for founders who need a great demo fast — without hiring an
+          editor or learning video tools. Point it at your site, get a demo that
+          looks great, and run it again anytime your site changes so it stays up
+          to date.
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="relative flex w-full max-w-[100vw] flex-col place-content-center place-items-center overflow-hidden p-6"
+      id="how-it-works"
+    >
+      <div class="flex w-full max-w-[1040px] flex-col items-center gap-16">
+        <h2 class="mt-5 text-4xl font-semibold">How it works</h2>
+
+        <div
+          class="flex w-full flex-col items-center gap-8 lg:flex-row lg:gap-12"
+        >
+          <div class="w-full lg:w-1/2">
+            <img
+              src="/assets/images/mockups/step-1.png"
+              alt="Paste your website link into Zepee"
+              class="w-full rounded-xl border border-gray-200 shadow-xl"
+            />
+          </div>
+          <div class="w-full lg:w-1/2">
+            <h3 class="text-2xl font-semibold">1. Point it at your site</h3>
+            <p class="mt-3 text-gray-700">
+              Give Zepee your website link and tell it what to show. It works
+              out the rest — you don't write anything.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full flex-col items-center gap-8 lg:flex-row-reverse lg:gap-12"
+        >
+          <div class="w-full lg:w-1/2">
+            <img
+              src="/assets/images/mockups/step-2.png"
+              alt="Zepee recording a website"
+              class="w-full rounded-xl border border-gray-200 shadow-xl"
+            />
+          </div>
+          <div class="w-full lg:w-1/2">
+            <h3 class="text-2xl font-semibold">2. It records your site</h3>
+            <p class="mt-3 text-gray-700">
+              Zepee clicks, scrolls, and types through your real site like a
+              person would — even pages behind a login.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full flex-col items-center gap-8 lg:flex-row lg:gap-12"
+        >
+          <div class="flex w-full justify-center lg:w-1/2">
+            <img
+              src="/assets/images/mockups/step-3.png"
+              alt="A finished video in Zepee"
+              class="w-full max-w-[440px] rounded-xl border border-gray-200 shadow-xl"
+            />
+          </div>
+          <div class="w-full lg:w-1/2">
+            <h3 class="text-2xl font-semibold">
+              3. Get your video and screenshots
+            </h3>
+            <p class="mt-3 text-gray-700">
+              You get a video and clear screenshots, ready to post on Product
+              Hunt, X, or your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex min-h-[30vh] w-full flex-col place-content-center place-items-center gap-[10%] overflow-hidden p-4 px-[10%] max-md:flex-col"
+    >
+      <h2 class="text-3xl max-md:text-2xl">Your demos never go stale</h2>
+
+      <a
+        href="#waitlist"
+        class="btn mt-[2%] duration-[0.3s] hover:scale-105 max-md:mt-8"
+      >
+        Join the waitlist
+      </a>
+    </section>
+
+    <section
+      class="flex w-full flex-col place-content-center place-items-center gap-[10%] p-[5%] px-[10%]"
+    >
+      <div
+        class="flex w-full flex-col place-content-center place-items-center gap-3"
+      >
+        <h2 class="primary-text-color text-2xl max-md:text-xl">
+          Be first to try Zepee
+        </h2>
+        <h2 class="text-xl max-md:text-lg">
+          Join the waitlist and get early access when it ships. Free during
+          early access.
+        </h2>
+
+        <form
+          name="waitlist"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="mt-2 flex h-[50px] w-full max-w-[440px] items-center gap-3"
+        >
+          <input type="hidden" name="form-name" value="waitlist" />
+          <p class="hidden">
+            <label>
+              Leave this empty:
+              <input name="bot-field" />
+            </label>
+          </p>
+          <input
+            type="email"
+            name="email"
+            required
+            class="input h-full w-full min-w-0 flex-1 rounded-md border-[2px] border-solid border-[#bfbfbf] p-2 px-3"
+            placeholder="joe@example.com"
+          />
+          <button
+            type="submit"
+            class="btn h-full shrink-0 whitespace-nowrap transition-colors duration-[0.3s]"
+          >
+            Join the waitlist
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer
+      class="mt-auto flex w-full place-content-around gap-3 p-[5%] px-[10%] text-black max-md:flex-col"
+    >
+      <div class="flex h-full w-[250px] flex-col gap-2 max-md:w-full">
+        <span class="flex place-items-center gap-2">
+          <span class="zp-logo-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m22 8-6 4 6 4V8Z" />
+              <rect width="14" height="12" x="2" y="6" rx="2" />
+            </svg>
+          </span>
+          <span class="text-2xl font-semibold">Zepee</span>
+        </span>
+        <div class="text-gray-700">
+          Turn any website into launch videos and screenshots.
+        </div>
+      </div>
+
+      <div class="flex gap-4 text-2xl">
+        <a
+          href="https://x.com/junayed711"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+        >
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a
+          href="https://github.com/superlayzer/zepee.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+
+  <script type="module" src="/src/main.js"></script>
+</html>

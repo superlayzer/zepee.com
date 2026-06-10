@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset the UA body margin inline so it never paints before the main CSS loads (prevents CLS). -->
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
     <title>Zepee — turn any website into launch videos and screenshots</title>
     <meta
       name="description"
@@ -165,6 +171,8 @@
           <img
             src="/assets/images/mockups/hero.png"
             alt="The Zepee app turning a website into demo videos and screenshots"
+            width="2144"
+            height="1604"
             class="h-auto w-full max-w-[620px] rounded-2xl shadow-xl"
           />
         </div>
@@ -201,6 +209,8 @@
             <img
               src="/assets/images/mockups/step-1.png"
               alt="Paste your website link into Zepee"
+              width="1240"
+              height="626"
               class="w-full rounded-xl border border-gray-200 shadow-xl"
             />
           </div>
@@ -220,6 +230,8 @@
             <img
               src="/assets/images/mockups/step-2.png"
               alt="Zepee recording a website"
+              width="1452"
+              height="768"
               class="w-full rounded-xl border border-gray-200 shadow-xl"
             />
           </div>
@@ -239,6 +251,8 @@
             <img
               src="/assets/images/mockups/step-3.png"
               alt="A finished video in Zepee"
+              width="578"
+              height="456"
               class="w-full max-w-[440px] rounded-xl border border-gray-200 shadow-xl"
             />
           </div>

@@ -2,7 +2,7 @@
 
 The landing page for **[Zepee](https://zepee.com)**.
 
-Zepee turns any website into a video and screenshots, automatically — no screen
+Zepee turns any website into videos and screenshots, automatically — no screen
 recording or editing. Give it a website link, tell it what to show, and it clicks
 through your live site like a real visitor, then hands you a video plus screenshots
 ready to post on Product Hunt, X, or your own site.
